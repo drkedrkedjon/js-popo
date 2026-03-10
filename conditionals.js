@@ -8,7 +8,7 @@ if (age < 18) {
   console.log("Dame tu tarjeta de credito");
 }
 
-switch (true) {
+switch (age) {
   case age < 18:
     console.log("No puedes conducir");
     break;
@@ -28,4 +28,20 @@ switch (age) {
     break;
   default:
     console.log("Who are you?");
+}
+
+let data = 55;
+
+switch (typeof data) {
+  case "string":
+    console.log("Soy string");
+    break;
+  case "number":
+    console.log("Soy numero");
+    break;
+  case "boolean":
+    console.log("Soy boolean");
+    break;
+  default:
+    console.log("Soy object");
 }
