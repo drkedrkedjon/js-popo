@@ -1,4 +1,4 @@
-// FUnciones y metodos que manipulan los strings
+// Funciones y metodos que manipulan los strings
 
 let str = "Sasa, el pendejo rapido salto sobre un pero gandul que salto";
 console.log(str.length); // 60
@@ -20,3 +20,18 @@ console.log(str.trim()); // trimStart() y trimEnd()
 console.log(str.toUpperCase()); // upercase
 
 // Hay un monton mas...
+// Operadores en JS y su orden
+let num = 2;
+console.log(num++); // O usar ++num si quieres retornar la nueva valor en lugar de original
+console.log(num);
+let newNum = -num; // Convertir positiv number into negative number / same value
+console.log(newNum);
+
+let numm = 306;
+numm %= 100;
+console.log(numm);
+
+const arr = [1, 2, 3, 4, 5, 6];
+
+const promedio = arr.reduce((acc, num) => acc + num, 0) / arr.length;
+console.log(promedio);
