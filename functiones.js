@@ -64,7 +64,8 @@ function movieTheater() {
   var seatsSold = 28;
 
   return {
-    remainingSeats: function () {
+    remainingSeats: function (newSale = 1) {
+      seatsSold += newSale;
       return seats - seatsSold;
     },
   };
@@ -73,11 +74,9 @@ function movieTheater() {
 var roomOne = movieTheater();
 
 // call the remainingSeats method of the instace of movieTheater
-console.log(roomOne.remainingSeats());
+console.log(roomOne.remainingSeats(7));
+console.log(roomOne.remainingSeats(7));
 
 //  test
 // Grab the below paragraph tag by its class name and change the inner HTML of the tag to Wizards don't jump they float.
 /* <p class="grabThis">The five boxing wizards jump quickly</p> */
-
-let paragraphElement = document.getElementsByClassName("grabThis")[0];
-paragraphElement.innerHTML = "Wizards don't jump they float.";
