@@ -77,6 +77,38 @@ var roomOne = movieTheater();
 console.log(roomOne.remainingSeats(7));
 console.log(roomOne.remainingSeats(7));
 
-//  test
-// Grab the below paragraph tag by its class name and change the inner HTML of the tag to Wizards don't jump they float.
-/* <p class="grabThis">The five boxing wizards jump quickly</p> */
+// Class
+let name = "Pepe";
+
+class Sasa {
+  constructor(name) {
+    this.name = name;
+  }
+
+  nombre() {
+    console.log(this.name);
+  }
+}
+
+const sasenko = new Sasa("Sasa");
+const catuska = new Sasa("Caty");
+
+sasenko.nombre();
+catuska.nombre();
+
+// Use 'this' to run the code and determine how many seats are left.
+
+var seats = {
+  seats: 50,
+  seatsSold: 28,
+  remainingSeats: function () {
+    return this.seats - this.seatsSold;
+  },
+  enoughSeats: function () {
+    if (this.remainingSeats() > 0) {
+      return this.remainingSeats();
+    }
+  },
+};
+
+console.log(seats.enoughSeats());
