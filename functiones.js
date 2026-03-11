@@ -36,3 +36,41 @@ function sasa(name = "Caty") {
 }
 
 sasa();
+
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(sum(2, 6));
+
+// Closures
+function closure(arg1) {
+  const id = arg1;
+
+  return function (name) {
+    return {
+      id: id,
+      name: name,
+    };
+  };
+}
+
+const laDeDentro = closure(798724);
+console.log(laDeDentro("Sasa"));
+
+// Take the variable roomOne and call the function on it to return the seats remaining.
+function movieTheater() {
+  var seats = 50;
+  var seatsSold = 28;
+
+  return {
+    remainingSeats: function () {
+      return seats - seatsSold;
+    },
+  };
+}
+
+var roomOne = movieTheater();
+
+// call the remainingSeats method of the instace of movieTheater
+console.log(roomOne.remainingSeats());
