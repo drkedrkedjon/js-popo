@@ -75,4 +75,9 @@ var roomOne = movieTheater();
 // call the remainingSeats method of the instace of movieTheater
 console.log(roomOne.remainingSeats());
 
-document.querySelector("h1").innerText = "Bottega Pinga Course";
+//  test
+// Grab the below paragraph tag by its class name and change the inner HTML of the tag to Wizards don't jump they float.
+/* <p class="grabThis">The five boxing wizards jump quickly</p> */
+
+let paragraphElement = document.getElementsByClassName("grabThis")[0];
+paragraphElement.innerHTML = "Wizards don't jump they float.";
