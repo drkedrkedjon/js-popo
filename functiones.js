@@ -74,3 +74,6 @@ var roomOne = movieTheater();
 
 // call the remainingSeats method of the instace of movieTheater
 console.log(roomOne.remainingSeats());
+
+const miH1 = document.querySelector("h1");
+miH1.innerText = "Bottega Pinga Course";
