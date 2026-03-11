@@ -45,3 +45,6 @@ switch (typeof data) {
   default:
     console.log("Soy object");
 }
+
+const ternario = false !== true ? "YES" : "NO";
+console.log(ternario);
