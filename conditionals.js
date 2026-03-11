@@ -9,17 +9,6 @@ if (age < 18) {
 }
 
 switch (age) {
-  case age < 18:
-    console.log("No puedes conducir");
-    break;
-  case age >= 80:
-    console.log("Eres un viejo carajillo");
-    break;
-  default:
-    console.log("Dame tu tarjeta de credito");
-}
-
-switch (age) {
   case 18:
     console.log("Balonja");
     break;
