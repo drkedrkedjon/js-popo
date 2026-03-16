@@ -73,3 +73,12 @@ console.log(spreadObjCopy); // { a: 1, b: 2, c: 3, d: 4 }
 
 const { a, d, ...restObj } = spreadObj;
 console.log(restObj); // { c: 3, d: 4 }
+
+// In the return below, use Math and spread operators to find the highest number of the highscore array.
+function yourTest() {
+  const highscore = [237.0198, 256.1, 234.846, 237.21, 256.654];
+
+  return Math.max(...highscore);
+}
+
+console.log(yourTest());
