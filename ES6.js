@@ -82,3 +82,41 @@ function yourTest() {
 }
 
 console.log(yourTest());
+
+// BIND function para unir una function externa con un objeto...
+const obj10 = {
+  name: "Sasa",
+  age: 44,
+};
+const obj11 = {
+  name: "Caty",
+  age: 44,
+};
+
+function binder() {
+  return `I'm ${this.name}, and I have ${this.age} years in my ass...`;
+}
+
+const sasa = binder.bind(obj10);
+console.log(sasa());
+
+console.log(binder.call(obj11));
+
+// CLASSES amd OOP
+class PlanoCasa {
+  constructor(precio, material) {
+    ((this.precio = precio), (this.material = material));
+  }
+
+  printer() {
+    console.log(
+      `Esta casa valdra ${this.precio}, y estara hecha de ${this.material}`,
+    );
+  }
+}
+
+const sasa10 = new PlanoCasa(200000, "madera");
+const caty10 = new PlanoCasa(300000, "hormigon");
+
+sasa10.printer();
+caty10.printer();
