@@ -132,11 +132,27 @@ console.log(PlanoCasa.puedeComprar(caty10));
 // Power function 2 ** 5
 
 function power(num, pwr) {
-  // const miArr = new Array(pwr).fill(num);
-  // return miArr.reduce((acc, num) => acc * num, 1);
-  return Math.pow(num, pwr);
+  const miArr = new Array(pwr).fill(num);
+  return miArr.reduce((acc, num) => acc * num, 1);
+  // return Math.pow(num, pwr);
 }
 
 console.log(power(2, 5));
 
 //  Next shitttttingshit
+
+const myPromise = new Promise((reject, resolve) => {
+  const bol = false;
+  setTimeout(() => {
+    if (bol === true) resolve("Hello...");
+  }, 1000);
+  setTimeout(() => {
+    if (bol !== true) reject(Error("Fallo"));
+  }, 1000);
+});
+
+myPromise
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => console.log(err));
