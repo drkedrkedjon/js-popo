@@ -104,19 +104,21 @@ console.log(binder.call(obj11));
 
 // CLASSES amd OOP
 class PlanoCasa {
-  constructor(precio, material) {
-    ((this.precio = precio), (this.material = material));
+  constructor(precio, material, roomNumber) {
+    this.precio = precio;
+    this.material = material;
+    this.roomNumber = roomNumber;
   }
 
   printer() {
     console.log(
-      `Esta casa valdra ${this.precio}, y estara hecha de ${this.material}`,
+      `Esta casa valdra ${this.precio}, y estara hecha de ${this.material} y tiene ${this.roomNumber} habitaciones`,
     );
   }
 }
 
-const sasa10 = new PlanoCasa(200000, "madera");
-const caty10 = new PlanoCasa(300000, "hormigon");
+const sasa10 = new PlanoCasa(200000, "madera", 2);
+const caty10 = new PlanoCasa(300000, "hormigon", 4);
 
 sasa10.printer();
 caty10.printer();
