@@ -142,7 +142,7 @@ console.log(power(2, 5));
 //  Next shitttttingshit
 
 const myPromise = new Promise((reject, resolve) => {
-  const bol = false;
+  const bol = true;
   setTimeout(() => {
     if (bol === true) resolve("Hello...");
   }, 1000);
@@ -156,3 +156,9 @@ myPromise
     console.log(data);
   })
   .catch((err) => console.log(err));
+
+// Fetch promesa
+
+const catPromise = fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
+  .then((data) => data.json())
+  .then((cat) => console.log(cat.text));
