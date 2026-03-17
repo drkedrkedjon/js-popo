@@ -132,8 +132,11 @@ console.log(PlanoCasa.puedeComprar(caty10));
 // Power function 2 ** 5
 
 function power(num, pwr) {
-  const miArr = new Array(pwr).fill(num);
-  return miArr.reduce((acc, num) => acc * num, 1);
+  // const miArr = new Array(pwr).fill(num);
+  // return miArr.reduce((acc, num) => acc * num, 1);
+  return Math.pow(num, pwr);
 }
 
 console.log(power(2, 5));
+
+//  Next shitttttingshit
