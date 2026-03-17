@@ -115,6 +115,9 @@ class PlanoCasa {
       `Esta casa valdra ${this.precio}, y estara hecha de ${this.material} y tiene ${this.roomNumber} habitaciones`,
     );
   }
+  static puedeComprar(cliente) {
+    return cliente.precio <= 200000 ? "No tienes pasta" : "Tienes la pasta tio";
+  }
 }
 
 const sasa10 = new PlanoCasa(200000, "madera", 2);
@@ -122,5 +125,15 @@ const caty10 = new PlanoCasa(300000, "hormigon", 4);
 
 sasa10.printer();
 caty10.printer();
+console.log(PlanoCasa.puedeComprar(sasa10));
+console.log(PlanoCasa.puedeComprar(caty10));
 
 // Next shitttt
+// Power function 2 ** 5
+
+function power(num, pwr) {
+  const miArr = new Array(pwr).fill(num);
+  return miArr.reduce((acc, num) => acc * num, 1);
+}
+
+console.log(power(2, 5));
