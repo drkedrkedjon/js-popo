@@ -122,3 +122,5 @@ const caty10 = new PlanoCasa(300000, "hormigon", 4);
 
 sasa10.printer();
 caty10.printer();
+
+// Next shitttt
