@@ -164,3 +164,42 @@ myPromise
 //   .then((cat) => console.log(cat.text));
 
 //  ASYNC/AWAIT
+
+const asincrona = async () => {
+  try {
+    const data = await fetch(
+      "https://uselessfacts.jsph.pl/api/v2/facts/random",
+    );
+    const facts = await data.json();
+    console.log(facts.text);
+  } catch (err) {
+    console.log(err);
+  }
+  try {
+    const data1 = await fetch(
+      "https://uselessfacts.jsph.pl/api/v2/facts/random",
+    );
+    const facts1 = await data1.json();
+    console.log(facts1.text);
+  } catch (err) {
+    console.log(err + " HIHIII");
+  }
+};
+
+// asincrona();
+
+const zumito = {
+  fruta: "Piña",
+  zumo: "Naranja",
+  sabor: "Excelente",
+  precio: 4.56,
+};
+
+function values(obj) {
+  const keys = Object.keys(obj);
+  keys.forEach((key) => console.log(obj[key]));
+}
+
+// values(zumito);
+
+// Next shitttt
