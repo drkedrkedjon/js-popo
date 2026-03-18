@@ -139,7 +139,7 @@ function power(num, pwr) {
 
 console.log(power(2, 5));
 
-//  Next shitttttingshit
+//  PROMESAS - PROMISES
 
 const myPromise = new Promise((reject, resolve) => {
   const bol = true;
@@ -159,6 +159,8 @@ myPromise
 
 // Fetch promesa
 
-const catPromise = fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
-  .then((data) => data.json())
-  .then((cat) => console.log(cat.text));
+// const catPromise = fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
+//   .then((data) => data.json())
+//   .then((cat) => console.log(cat.text));
+
+//  ASYNC/AWAIT
