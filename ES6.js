@@ -203,3 +203,7 @@ function values(obj) {
 // values(zumito);
 
 // Next shitttt
+const big = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].filter((item) => item > 5);
+console.log(big);
+
+// Test
