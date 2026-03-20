@@ -207,3 +207,19 @@ const big = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].filter((item) => item > 5);
 console.log(big);
 
 // Test
+// throw new Error("ERRRRRRRREEEERRRRROR");
+
+class Sasa extends Error {
+  constructor(msg) {
+    super(msg);
+  }
+}
+
+// throw new Error("Shit happens");
+
+// ### Y por último debes realizar el siguiente ejercicio práctico, y subirlo a tu repositorio en Git-Hub para revisarlo
+
+// - Cree un bucle for en JS que imprima cada nombre en esta lista. miLista = “velma”, “exploradora”, “jane”, “john”, “harry” (https://support.devcamp.com/tickets)
+// - Cree un bucle while que recorra la misma lista y también imprima los nombres. Nota: Recuerda crear un contador para que el ciclo no sea infinito.
+// - Cree una función de flecha que devuelva "Hola mundo".
+//   Esta es toda la asignación, ¡mucha suerte!
