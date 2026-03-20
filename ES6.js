@@ -215,11 +215,18 @@ class Sasa extends Error {
   }
 }
 
-// throw new Error("Shit happens");
+// Test ultimo
 
-// ### Y por último debes realizar el siguiente ejercicio práctico, y subirlo a tu repositorio en Git-Hub para revisarlo
+const miLista = ["velma", "exploradora", "jane", "john", "harry"];
 
-// - Cree un bucle for en JS que imprima cada nombre en esta lista. miLista = “velma”, “exploradora”, “jane”, “john”, “harry” (https://support.devcamp.com/tickets)
-// - Cree un bucle while que recorra la misma lista y también imprima los nombres. Nota: Recuerda crear un contador para que el ciclo no sea infinito.
-// - Cree una función de flecha que devuelva "Hola mundo".
-//   Esta es toda la asignación, ¡mucha suerte!
+for (let i = 0; i < miLista.length; i++) {
+  console.log(miLista[i]);
+}
+
+let contador = 0;
+while (contador < miLista.length) {
+  console.log(miLista[contador]);
+  contador++;
+}
+
+const saludo = () => "Hola mundo";
