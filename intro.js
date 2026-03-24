@@ -1,3 +1,5 @@
+import newNum, { arr, numm } from "./strings.js";
+
 // Type check in JS
 let typeCheck = "Sasa";
 console.log(typeof typeCheck);
@@ -15,3 +17,7 @@ console.log(+"56"); // Convierte string into the number - new one for me
 
 console.log(Number(true)); // 1
 console.log(Number(false)); // 0
+
+console.log(newNum);
+console.log(arr);
+console.log(numm);
