@@ -1,3 +1,4 @@
+// import * as sasa from "./strings.js";
 import newNum, { arr, numm } from "./strings.js";
 
 // Type check in JS
