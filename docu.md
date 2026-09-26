@@ -1,5 +1,6 @@
 # Documentacion sobre JavaScript
 
+
 ## ¿Qué diferencia a Javascript de cualquier otro lenguaje de programación?
 
 JavaScript es un lenguaje de programación fundamental para el desarrollo web, y tiene características únicas que lo distinguen de otros lenguajes.
