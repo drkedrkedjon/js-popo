@@ -50,6 +50,7 @@ En JavaScript existen varios tipos de bucles, cada uno con características y us
 
 \*No recomendado para arrays, puede incluir propiedades heredadas o agregadas manualmente.
 
+
 ---
 
 ### 1. Bucle **for**
